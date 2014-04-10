@@ -1,0 +1,6 @@
+*.pyc
+__pycache__
+.*.swp
+/dist
+/sgtools.egg-info
+/build
