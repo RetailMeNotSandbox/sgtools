@@ -145,3 +145,18 @@ groups in a VPC if passed the ominuously-named ``--obliterate`` flag to
 rules given to it are the **only** rules that should exist in the VPC. If a
 group exists but no rules are defined for it, that group will have all of its
 rules removed.
+
+%%%%%%%%%%%%%%%%%%
+Installing sgtools
+%%%%%%%%%%%%%%%%%%
+
+sgtools is available in PyPI and is installable via pip::
+
+    pip install sgtools
+
+You may also install sgtools from source, perhaps from the GitHub repo::
+
+    git clone https://github.com/RetailMeNot/sgtools.git
+    cd sgtools
+    python setup.py install
+
