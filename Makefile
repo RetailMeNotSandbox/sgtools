@@ -12,8 +12,12 @@ install:
 clean:
 	find . -name \*.pyc -exec rm -f {} \;
 	find . -depth -type d -name __pycache__ -exec rm -rf {} \;
-	rm -rf build dist $(PROJECT).egg-info
+	rm -rf build dist $(PROJECT).egg-info coverage.xml .coverage
 
 lint:
 	@echo Checking for Python syntax...
 	flake8 --ignore=E123,E501 $(PROJECT) && echo OK
+
+test:
+	@echo Running tests...
+	nosetests tests --with-coverage --cover-package=sgtools

@@ -167,9 +167,12 @@ class Rule(dict):
         srcg = (self["Direction"], self.get("OtherGroupId", ''))
         return (gid, perm, srcc, srcg)
 
-    def __le__(self, other):
+    def __lt__(self, other):
         # note that test coverage for this method is dependent on the operator
-        # used in the test. Use <= to keep your numbers up.
+        # used in the test. Use < to keep your numbers up.
+        return self._key < other._key
+
+    def __le__(self, other):
         return self._key <= other._key
 
     def __eq__(self, other):
