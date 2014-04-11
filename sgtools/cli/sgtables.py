@@ -2,7 +2,7 @@ from __future__ import print_function
 import sys
 import os
 from argparse import ArgumentParser
-from acky import AWS
+from acky.aws import AWS
 from acky.api import AWSCallError
 from sgtools.abstractions.sgengine import (
     RuleSet,

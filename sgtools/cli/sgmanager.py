@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from itertools import chain
 from sgtools.abstractions.sgmanager import Parser
 from sgtools.abstractions.sgengine import read_rules
-from acky import AWS
+from acky.aws import AWS
 
 
 def render_rules(args):
