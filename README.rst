@@ -1,11 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Security Group Management Rule Management in Situ
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Security Group Management Rule Management in sgtools
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Concepts
 ********
 
-Security Groups rules in AWS have four basic components. In Situ and this
+Security Groups rules in AWS have four basic components. In sgtools and this
 documentation, we refer to them as follows:
 
 * A *direction*, "in" (ingress) or "out" (egress)
@@ -16,7 +16,8 @@ documentation, we refer to them as follows:
 Included Tools
 **************
 
-Situ includes two tools for managing security group rules: ``sgtables`` and ``sgmanager``.
+sgtools includes two tools for managing security group rules: ``sgtables`` and
+``sgmanager``.
 
 ``sgmanager`` is a higher-level tool used for managing more human-friendly rule
 representations. ``sgmanager`` depends on ``sgtables`` to make changes in AWS.
