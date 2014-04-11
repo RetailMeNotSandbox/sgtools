@@ -96,7 +96,8 @@ def groupdefs(args):
 
 def define_arguments():
     ap = ArgumentParser()
-    sp = ap.add_subparsers(title="Subcommands")
+    sp = ap.add_subparsers(title="Subcommands", dest="subcommand")
+    sp.required = True
 
     #=====
     grpscmd = sp.add_parser("groupdefs",

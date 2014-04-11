@@ -11,7 +11,8 @@ install:
 
 clean:
 	find . -name \*.pyc -exec rm -f {} \;
-	rm -rf build dist situ.egg-info
+	find . -depth -type d -name __pycache__ -exec rm -rf {} \;
+	rm -rf build dist $(PROJECT).egg-info
 
 lint:
 	@echo Checking for Python syntax...

@@ -136,7 +136,8 @@ def define_arguments():
                                  help="Only list/modify these groups")
 
     ap = ArgumentParser()
-    sp = ap.add_subparsers(title="Subcommands")
+    sp = ap.add_subparsers(title="Subcommands", dest="subcommand")
+    sp.required = True
 
     #=====
     listcmd = sp.add_parser("list", parents=[std_args],
